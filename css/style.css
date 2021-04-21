@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.text-input{
+    padding: 8px 15px;
+    min-width: 200px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-right: 10px;
+}
+
+.btn{
+    padding: 8px 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+/* LOGO */
+.logo img{
+    width: 200px;
+}
+
+/* NEW TODO */
+.new-todo{
+    padding: 20px;
+}
+
+/* LISTA TODOS */
+.todos-container{
+    background-color: #F5F7F7;
+    padding: 25px;
+}
+
+ul.todos-list{
+    list-style-type: none;
+}
+
+ul.todos-list li{
+    text-align: left;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+
+ul.todos-list li .delete{
+    float: right;
+}

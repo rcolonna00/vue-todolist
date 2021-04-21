@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Collega html e css -->
+    <link rel="stylesheet" href="css/style.css">  
+    <!-- Collega html e font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Collega html e Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Titolo html -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root">
+        <div class="container">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!-- FINE LOGO -->
+
+            <!-- NEW TODO -->
+            <div class="new-todo">
+                <input class="text-input" type="text" placeholder="new-todo">
+                <button class="btn">Aggiungi</button>
+            </div>
+            <!-- FINE NEW TODO -->
+
+            <!-- LISTA TODOS -->
+            <div class="todos-container">
+                <ul class="todos-list">
+
+                    <!-- SINGLE TODOS -->
+                    <li v-for="todo in todos">
+                        {{ todo }}
+                        Fare i compiti
+                        <span class="delete">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </li>
+                    <!-- FINE SINGLE TODOS -->
+
+                </ul>
+            </div>
+            <!-- FINE LISTA TODOS -->
+
+
+        </div>
+    </div>
+
+    <!-- Collega html a javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
