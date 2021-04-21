@@ -27,8 +27,8 @@
 
             <!-- NEW TODO -->
             <div class="new-todo">
-                <input class="text-input" type="text" placeholder="new-todo">
-                <button class="btn">Aggiungi</button>
+                <input v-model="userNewTodo" @keyup.enter="addNewTodo" class="text-input" type="text" placeholder="new-todo">
+                <button class="btn" @click="addNewTodo">Aggiungi</button>
             </div>
             <!-- FINE NEW TODO -->
 
@@ -37,10 +37,9 @@
                 <ul class="todos-list">
 
                     <!-- SINGLE TODOS -->
-                    <li v-for="todo in todos">
+                    <li v-for="(todo, index) in todos">
                         {{ todo }}
-                        Fare i compiti
-                        <span class="delete">
+                        <span class="delete" @click="deleteTodo(index)">
                             <i class="fas fa-times"></i>
                         </span>
                     </li>

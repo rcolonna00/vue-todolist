@@ -51,9 +51,10 @@ ul.todos-list li{
     text-align: left;
     border-bottom: 1px solid grey;
     font-size: 20px;
-    padding-bottom: 7px;
+    padding: 7px 0;
 }
 
 ul.todos-list li .delete{
     float: right;
+    cursor: pointer;
 }
