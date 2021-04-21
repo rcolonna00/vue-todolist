@@ -34,7 +34,7 @@
 
             <!-- LISTA TODOS -->
             <div class="todos-container">
-                <ul class="todos-list">
+                <ul v-if="todos.length > 0" class="todos-list">
 
                     <!-- SINGLE TODOS -->
                     <li v-for="(todo, index) in todos">
@@ -46,6 +46,7 @@
                     <!-- FINE SINGLE TODOS -->
 
                 </ul>
+                <div v-else>Nessun todo salvato</div>
             </div>
             <!-- FINE LISTA TODOS -->
 
